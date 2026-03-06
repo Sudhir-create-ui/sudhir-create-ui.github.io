@@ -1,27 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sudhir Saroha - Data Analyst</title>
+<style>
+    /* Reset default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(120deg, #f6d365, #fda085);
+        color: #333;
+        padding: 20px;
+        min-height: 100vh;
+        animation: bgAnimate 15s infinite alternate;
+    }
+
+    @keyframes bgAnimate {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        animation: fadeInDown 1.5s ease forwards;
+    }
+
+    p.subtitle {
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        animation: fadeInUp 1.5s ease forwards;
+    }
+
+    h2 {
+        color: #ffeb3b;
+        margin-top: 30px;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px;
+        animation: fadeInLeft 1.5s ease forwards;
+    }
+
+    h3 {
+        color: #fff;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    h3:hover {
+        color: #ffeb3b;
+        transform: scale(1.05);
+    }
+
+    p {
+        color: #f0f0f0;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        transition: color 0.3s;
+    }
+
+    p:hover {
+        color: #ffeb3b;
+    }
+
+    .contact {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.1rem;
+        background: rgba(0,0,0,0.2);
+        padding: 20px;
+        border-radius: 10px;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+        0% { opacity: 0; transform: translateY(-30px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(30px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInLeft {
+        0% { opacity: 0; transform: translateX(-50px); }
+        100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+</style>
 </head>
 
 <body>
 
 <h1>Sudhir Saroha</h1>
-<p>Data Analyst | SQL | Python | Power BI</p>
+<p class="subtitle">Data Analyst | SQL | Python | Power BI</p>
 
 <h2>Projects</h2>
 
 <h3>Sales Analytics Dashboard</h3>
-<p>Power BI dashboard analyzing retail sales data.</p>
+<p>Power BI dashboard analyzing retail sales data with interactive visualizations and KPIs.</p>
 
 <h3>Netflix Content Analysis</h3>
-<p>Analyzed Netflix dataset using SQL and Power BI.</p>
+<p>Analyzed Netflix dataset using SQL and Power BI to discover trending genres and content insights.</p>
 
 <h3>Gym Analytics Dashboard</h3>
-<p>Analyzed membership trends and revenue performance.</p>
+<p>Analyzed membership trends and revenue performance to identify opportunities for growth.</p>
 
 <h2>Contact</h2>
-<p>Email: sudhirsaroha70@gmail.com</p>
+<div class="contact">
+    <p>Email: <a href="mailto:sudhirsaroha70@gmail.com" style="color:#fff; text-decoration: underline;">sudhirsaroha70@gmail.com</a></p>
+</div>
 
 </body>
 </html>
