@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sudhir Saroha | Data Analyst Portfolio</title>
+<title>Sudhir Saroha | Data Analyst</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -21,47 +21,75 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
+background:linear-gradient(-45deg,#0f2027,#2c5364,#1f1c2c,#3a1c71);
+background-size:400% 400%;
+animation:gradientBG 12s ease infinite;
 color:white;
+overflow-x:hidden;
 }
 
-/* NAVBAR */
+/* animated gradient */
+
+@keyframes gradientBG{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+/* floating DATA ANALYST words */
+
+.floating-text{
+position:fixed;
+font-size:28px;
+font-weight:bold;
+color:rgba(255,255,255,0.08);
+animation:float 20s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh) translateX(0);
+}
+100%{
+transform:translateY(-120vh) translateX(200px);
+}
+}
+
+/* navbar */
 
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 60px;
-background:#020617;
-position:sticky;
-top:0;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
 }
 
 nav h2{
-color:#38bdf8;
+color:#00e5ff;
 }
 
 nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
-font-size:16px;
 }
 
 nav a:hover{
-color:#38bdf8;
+color:#00e5ff;
 }
 
-/* HERO */
+/* hero */
 
 .hero{
 text-align:center;
-padding:100px 20px;
+padding:120px 20px;
 }
 
 .hero h1{
-font-size:50px;
-background:linear-gradient(90deg,#22d3ee,#3b82f6);
+font-size:55px;
+background:linear-gradient(90deg,#00e5ff,#ff4ecd);
 -webkit-background-clip:text;
 color:transparent;
 }
@@ -72,27 +100,12 @@ font-size:20px;
 color:#cbd5f5;
 }
 
-.btn{
-margin-top:30px;
-display:inline-block;
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.btn:hover{
-background:#0ea5e9;
-}
-
-/* STATS */
+/* stats */
 
 .stats{
 display:flex;
 justify-content:center;
-gap:60px;
+gap:70px;
 margin:60px 0;
 }
 
@@ -102,16 +115,18 @@ text-align:center;
 
 .stat h2{
 font-size:40px;
-color:#38bdf8;
+color:#00e5ff;
 }
 
-/* PROJECT SECTION */
+/* container */
 
 .container{
 max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
+
+/* projects */
 
 .projects{
 display:grid;
@@ -120,15 +135,16 @@ gap:25px;
 }
 
 .card{
-background:#1e293b;
+background:rgba(0,0,0,0.45);
 padding:25px;
 border-radius:15px;
-transition:.4s;
+transition:0.4s;
+backdrop-filter:blur(10px);
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px #38bdf8;
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px #00e5ff;
 }
 
 .card h3{
@@ -137,16 +153,16 @@ margin-bottom:10px;
 
 .card p{
 font-size:14px;
-color:#cbd5f5;
+color:#d1d5db;
 margin-bottom:10px;
 }
 
 .card a{
-color:#38bdf8;
+color:#00e5ff;
 text-decoration:none;
 }
 
-/* SKILLS */
+/* skills */
 
 .skills{
 text-align:center;
@@ -159,10 +175,10 @@ margin-top:30px;
 display:flex;
 justify-content:center;
 gap:40px;
-color:#38bdf8;
+color:#00e5ff;
 }
 
-/* CONTACT */
+/* contact */
 
 .contact{
 text-align:center;
@@ -170,22 +186,18 @@ margin-top:80px;
 }
 
 .contact a{
-color:#38bdf8;
+color:#00e5ff;
 text-decoration:none;
 font-size:18px;
 }
 
-.contact a:hover{
-color:white;
-}
-
-/* FOOTER */
+/* footer */
 
 footer{
 text-align:center;
 padding:40px;
 margin-top:60px;
-color:#94a3b8;
+color:#cbd5f5;
 }
 
 </style>
@@ -194,16 +206,20 @@ color:#94a3b8;
 
 <body>
 
+<!-- floating words -->
+
+<div class="floating-text" style="left:10%">DATA ANALYST</div>
+<div class="floating-text" style="left:40%;animation-delay:5s">DATA ANALYST</div>
+<div class="floating-text" style="left:70%;animation-delay:10s">DATA ANALYST</div>
+
 <nav>
 
 <h2>Sudhir</h2>
 
 <div>
-
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
-
 </div>
 
 </nav>
@@ -213,10 +229,6 @@ color:#94a3b8;
 <h1>Sudhir Saroha</h1>
 
 <p>Data Analyst | SQL | Python | Power BI | Data Visualization</p>
-
-<a class="btn" href="Sudhir_Saroha_Data_Analyst_Resume.pdf" download>
-Download Resume
-</a>
 
 </section>
 
@@ -247,43 +259,43 @@ Download Resume
 
 <div class="card">
 <h3>Adidas Sales Analysis</h3>
-<p>Analysis of Adidas product sales trends using Power BI dashboards.</p>
+<p>Retail sales analytics with Power BI dashboards.</p>
 <a href="https://github.com/Sudhir-create-ui/Adidas-Sales-Analysis">View Project</a>
 </div>
 
 <div class="card">
 <h3>Grocery Sales Analysis</h3>
-<p>Explored grocery dataset to identify revenue patterns.</p>
+<p>Exploring grocery sales trends and revenue insights.</p>
 <a href="https://github.com/Sudhir-create-ui/Grocery-Sales-">View Project</a>
 </div>
 
 <div class="card">
 <h3>Swiggy Delivery Analysis</h3>
-<p>Analyzed delivery patterns and operational insights.</p>
+<p>Food delivery analytics and operational insights.</p>
 <a href="https://github.com/Sudhir-create-ui/Swiggy_Delivery_Data_Analysis">View Project</a>
 </div>
 
 <div class="card">
 <h3>Cardiovascular Disease Analysis</h3>
-<p>Identifying health risk factors using data analytics.</p>
+<p>Health dataset analysis identifying disease risk factors.</p>
 <a href="https://github.com/Sudhir-create-ui/Cardiovascular_Disease_Analysis">View Project</a>
 </div>
 
 <div class="card">
 <h3>Netflix Data Analytics</h3>
-<p>End-to-end analytics project using SQL, Power BI and DAX.</p>
+<p>End-to-end SQL + Power BI analytics project.</p>
 <a href="https://github.com/Sudhir-create-ui/Netflix-Data-Analytics-Project">View Project</a>
 </div>
 
 <div class="card">
 <h3>Crime Dataset India</h3>
-<p>Analysis and visualization of crime patterns.</p>
+<p>Visualization of crime trends and patterns.</p>
 <a href="https://github.com/Sudhir-create-ui/Crime_Dataset_India">View Project</a>
 </div>
 
 <div class="card">
 <h3>Gym Analytics Dashboard</h3>
-<p>Dashboard tracking gym members and revenue performance.</p>
+<p>Dashboard tracking membership and revenue insights.</p>
 <a href="https://github.com/Sudhir-create-ui/Gym-Analytics-Dashboard">View Project</a>
 </div>
 
@@ -310,7 +322,7 @@ Download Resume
 
 <h2>Contact</h2>
 
-<p>Email:</p>
+<p>Email</p>
 
 <a href="mailto:sudhirsaroha70@gmail.com">
 sudhirsaroha70@gmail.com
@@ -324,7 +336,7 @@ sudhirsaroha70@gmail.com
 
 &nbsp;&nbsp;&nbsp;
 
-<a href="www.linkedin.com/in">
+<a href="https://linkedin.com">
 <i class="fa-brands fa-linkedin"></i> LinkedIn
 </a>
 
