@@ -7,6 +7,8 @@
 
 <title>Sudhir Saroha | Data Analyst</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 
 *{
@@ -14,53 +16,93 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Segoe UI;
+scroll-behavior:smooth;
 }
 
 body{
 background:#0f172a;
 color:white;
-overflow-x:hidden;
 }
 
-#particles{
-position:fixed;
-width:100%;
-height:100%;
-z-index:-1;
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#020617;
+position:sticky;
+top:0;
+z-index:100;
 }
 
-header{
+nav h2{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
 text-align:center;
-padding:60px 20px;
+padding:100px 20px;
 }
 
-header h1{
+.hero h1{
 font-size:50px;
-background:linear-gradient(90deg,#00f2fe,#4facfe);
+background:linear-gradient(90deg,#22d3ee,#3b82f6);
 -webkit-background-clip:text;
 color:transparent;
 }
 
-header p{
-margin-top:10px;
+.hero p{
+margin-top:15px;
+color:#cbd5f5;
 font-size:20px;
-color:#94a3b8;
 }
+
+.btn{
+margin-top:25px;
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+margin:60px 0;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:40px;
+color:#38bdf8;
+}
+
+/* PROJECTS */
 
 .container{
 max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
-
-h2{
-text-align:center;
-margin-bottom:40px;
-font-size:32px;
-color:#38bdf8;
-}
-
-/* PROJECT GRID */
 
 .projects{
 display:grid;
@@ -72,61 +114,46 @@ gap:25px;
 background:#1e293b;
 padding:25px;
 border-radius:15px;
-transition:0.4s;
-border:1px solid transparent;
+transition:.4s;
 }
 
 .card:hover{
-transform:translateY(-8px);
-border:1px solid #38bdf8;
-box-shadow:0 0 20px rgba(56,189,248,0.6);
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-.card p{
-color:#cbd5f5;
-font-size:14px;
-margin-bottom:10px;
+transform:translateY(-10px);
+box-shadow:0 0 20px #38bdf8;
 }
 
 .card a{
 color:#38bdf8;
 text-decoration:none;
-font-weight:bold;
 }
 
 /* SKILLS */
 
 .skills{
-margin-top:60px;
+margin-top:70px;
+text-align:center;
 }
 
-.skill{
-margin-bottom:25px;
+.skill-icons{
+margin-top:30px;
+font-size:50px;
+display:flex;
+justify-content:center;
+gap:40px;
+color:#38bdf8;
 }
 
-.skill-name{
-margin-bottom:5px;
+/* CONTACT */
+
+.contact{
+text-align:center;
+margin-top:80px;
 }
 
-.bar{
-background:#334155;
-height:8px;
-border-radius:20px;
-overflow:hidden;
-}
-
-.progress{
-height:8px;
-background:linear-gradient(90deg,#22d3ee,#3b82f6);
-animation:load 2s forwards;
-}
-
-@keyframes load{
-from{width:0}
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+font-size:18px;
 }
 
 /* FOOTER */
@@ -134,13 +161,7 @@ from{width:0}
 footer{
 text-align:center;
 padding:40px;
-margin-top:40px;
 color:#94a3b8;
-}
-
-footer a{
-color:#38bdf8;
-text-decoration:none;
 }
 
 </style>
@@ -149,147 +170,135 @@ text-decoration:none;
 
 <body>
 
-<canvas id="particles"></canvas>
+<nav>
 
-<header>
+<h2>Sudhir</h2>
+
+<div>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
 
 <h1>Sudhir Saroha</h1>
+
 <p>Data Analyst | SQL | Python | Power BI | Data Visualization</p>
 
-</header>
+<a class="btn" href="#">Download Resume</a>
 
-<div class="container">
+</section>
 
-<h2>Data Analytics Projects</h2>
+<section class="stats">
+
+<div class="stat">
+<h2>7+</h2>
+<p>Projects</p>
+</div>
+
+<div class="stat">
+<h2>5+</h2>
+<p>Datasets</p>
+</div>
+
+<div class="stat">
+<h2>3+</h2>
+<p>Tools Used</p>
+</div>
+
+</section>
+
+<section class="container" id="projects">
+
+<h2 style="text-align:center;margin-bottom:40px;">Projects</h2>
 
 <div class="projects">
 
 <div class="card">
 <h3>Adidas Sales Analysis</h3>
-<p>Analyzed Adidas product sales trends and built interactive dashboards.</p>
-<a href="https://github.com/Sudhir-create-ui/Adidas-Sales-Analysis">View Project</a>
+<p>Retail sales analysis with Power BI dashboards.</p>
+<a href="https://github.com/Sudhir-create-ui/Adidas-Sales-Analysis">GitHub</a>
 </div>
 
 <div class="card">
 <h3>Grocery Sales Analysis</h3>
-<p>Explored grocery dataset to identify revenue patterns and top products.</p>
-<a href="https://github.com/Sudhir-create-ui/Grocery-Sales-">View Project</a>
+<p>Exploring product demand and revenue patterns.</p>
+<a href="https://github.com/Sudhir-create-ui/Grocery-Sales-">GitHub</a>
 </div>
 
 <div class="card">
 <h3>Swiggy Delivery Analysis</h3>
-<p>Analyzed food delivery patterns and operational performance.</p>
-<a href="https://github.com/Sudhir-create-ui/Swiggy_Delivery_Data_Analysis">View Project</a>
+<p>Delivery trends and operational insights.</p>
+<a href="https://github.com/Sudhir-create-ui/Swiggy_Delivery_Data_Analysis">GitHub</a>
 </div>
 
 <div class="card">
 <h3>Cardiovascular Disease Analysis</h3>
-<p>Exploratory data analysis identifying major disease risk factors.</p>
-<a href="https://github.com/Sudhir-create-ui/Cardiovascular_Disease_Analysis">View Project</a>
+<p>Exploratory data analysis on health dataset.</p>
+<a href="https://github.com/Sudhir-create-ui/Cardiovascular_Disease_Analysis">GitHub</a>
 </div>
 
 <div class="card">
 <h3>Netflix Data Analytics</h3>
-<p>End-to-end analytics using SQL, Power BI and DAX.</p>
-<a href="https://github.com/Sudhir-create-ui/Netflix-Data-Analytics-Project">View Project</a>
+<p>SQL + Power BI project exploring streaming trends.</p>
+<a href="https://github.com/Sudhir-create-ui/Netflix-Data-Analytics-Project">GitHub</a>
 </div>
 
 <div class="card">
 <h3>Crime Dataset India</h3>
-<p>Visualization of crime patterns across regions.</p>
-<a href="https://github.com/Sudhir-create-ui/Crime_Dataset_India">View Project</a>
+<p>Visualization of crime patterns.</p>
+<a href="https://github.com/Sudhir-create-ui/Crime_Dataset_India">GitHub</a>
 </div>
 
 <div class="card">
 <h3>Gym Analytics Dashboard</h3>
-<p>Excel and Power BI dashboard tracking gym membership and revenue.</p>
-<a href="https://github.com/Sudhir-create-ui/Gym-Analytics-Dashboard">View Project</a>
+<p>Membership and revenue tracking dashboard.</p>
+<a href="https://github.com/Sudhir-create-ui/Gym-Analytics-Dashboard">GitHub</a>
 </div>
 
 </div>
 
-<div class="skills">
+</section>
 
-<h2>Technical Skills</h2>
+<section class="skills" id="skills">
 
-<div class="skill">
-<div class="skill-name">SQL</div>
-<div class="bar"><div class="progress" style="width:90%"></div></div>
-</div>
+<h2>Tech Stack</h2>
 
-<div class="skill">
-<div class="skill-name">Power BI</div>
-<div class="bar"><div class="progress" style="width:85%"></div></div>
-</div>
+<div class="skill-icons">
 
-<div class="skill">
-<div class="skill-name">Python</div>
-<div class="bar"><div class="progress" style="width:75%"></div></div>
-</div>
-
-<div class="skill">
-<div class="skill-name">Excel</div>
-<div class="bar"><div class="progress" style="width:85%"></div></div>
-</div>
+<i class="fa-solid fa-database"></i>
+<i class="fa-brands fa-python"></i>
+<i class="fa-solid fa-chart-simple"></i>
+<i class="fa-solid fa-table"></i>
 
 </div>
 
-</div>
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact</h2>
+
+<p>Email:</p>
+
+<a href="mailto:sudhirsaroha70@gmail.com">sudhirsaroha70@gmail.com</a>
+
+<br><br>
+
+<a href="https://github.com/Sudhir-create-ui">
+<i class="fa-brands fa-github"></i> GitHub Profile
+</a>
+
+</section>
 
 <footer>
 
-<p>Contact: <a href="mailto:sudhirsaroha70@gmail.com">sudhirsaroha70@gmail.com</a></p>
+<p>© 2026 Sudhir Saroha | Data Analyst Portfolio</p>
 
 </footer>
-
-<script>
-
-/* PARTICLE BACKGROUND */
-
-const canvas=document.getElementById("particles")
-const ctx=canvas.getContext("2d")
-
-canvas.width=window.innerWidth
-canvas.height=window.innerHeight
-
-let particles=[]
-
-for(let i=0;i<80;i++){
-particles.push({
-x:Math.random()*canvas.width,
-y:Math.random()*canvas.height,
-r:Math.random()*2,
-dx:(Math.random()-0.5)*1,
-dy:(Math.random()-0.5)*1
-})
-}
-
-function animate(){
-
-ctx.clearRect(0,0,canvas.width,canvas.height)
-
-particles.forEach(p=>{
-
-ctx.beginPath()
-ctx.arc(p.x,p.y,p.r,0,Math.PI*2)
-ctx.fillStyle="#38bdf8"
-ctx.fill()
-
-p.x+=p.dx
-p.y+=p.dy
-
-if(p.x<0||p.x>canvas.width)p.dx*=-1
-if(p.y<0||p.y>canvas.height)p.dy*=-1
-
-})
-
-requestAnimationFrame(animate)
-
-}
-
-animate()
-
-</script>
 
 </body>
 </html>
