@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<title>Sudhir | Data Analyst Portfolio</title>
+<title>Sudhir Saroha | Data Analyst Portfolio</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -16,7 +17,7 @@ margin:0;
 overflow-x:hidden;
 }
 
-/* moving coding background */
+/* coding background */
 
 .code-bg{
 position:fixed;
@@ -39,18 +40,6 @@ z-index:-1;
 
 section{
 padding:80px 10%;
-animation:slideLeft 1.2s ease;
-}
-
-@keyframes slideLeft{
-from{
-opacity:0;
-transform:translateX(150px);
-}
-to{
-opacity:1;
-transform:translateX(0);
-}
 }
 
 h1,h2{
@@ -72,6 +61,28 @@ font-size:48px;
 font-size:20px;
 max-width:700px;
 margin:auto;
+}
+
+/* buttons */
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+background:#00f7ff;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:5px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
 }
 
 /* skills */
@@ -174,12 +185,26 @@ padding:30px;
 color:gray;
 }
 
+.social{
+margin-top:20px;
+}
+
+.social a{
+margin:10px;
+color:#00f7ff;
+font-size:22px;
+text-decoration:none;
+}
+
 </style>
+
 </head>
+
 
 <body>
 
 <div class="code-bg">
+
 SELECT * FROM SALES;
 import pandas as pd
 df = pd.read_csv("sales.csv")
@@ -189,18 +214,30 @@ DATA CLEANING
 EDA ANALYSIS
 BUSINESS INTELLIGENCE
 DATA VISUALIZATION
+
 </div>
 
 
 <section class="hero">
 
-<h1>Hi I'm Sudhir</h1>
+<h1>Hi I'm Sudhir Saroha</h1>
 
 <p>
-Data Analyst skilled in SQL, Python, Power BI and Excel.
-I transform raw data into actionable insights that help businesses
-make better strategic decisions.
+Data Analyst skilled in SQL, Python, Power BI and Excel.  
+I transform raw data into actionable insights that help businesses make strategic decisions.
 </p>
+
+<div class="buttons">
+
+<a class="btn" href="https://github.com/Sudhir-create-ui" target="_blank">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
+
+<a class="btn" href="https://linkedin.com" target="_blank">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+</div>
 
 </section>
 
@@ -232,74 +269,22 @@ make better strategic decisions.
 <div class="project">
 <h3>Adidas Sales Analysis</h3>
 <p><b>Tools:</b> Power BI, Excel</p>
-<p>Analyzed Adidas product sales data and built an interactive dashboard to identify top performing regions and sales trends.</p>
-<a href="https://github.com/Sudhir-create-ui/Adidas-Sales-Analysis">GitHub</a>
-</div>
-
-<div class="project">
-<h3>Grocery Sales Analysis</h3>
-<p><b>Tools:</b> Excel, Power BI</p>
-<p>Explored grocery retail sales patterns and created visual dashboards to analyze category performance and revenue trends.</p>
-<a href="https://github.com/Sudhir-create-ui/Grocery-Sales-">GitHub</a>
-</div>
-
-<div class="project">
-<h3>Swiggy Delivery Data Analysis</h3>
-<p><b>Tools:</b> Python, Pandas</p>
-<p>Performed exploratory data analysis on delivery dataset to identify operational inefficiencies and delivery performance patterns.</p>
-<a href="https://github.com/Sudhir-create-ui/Swiggy_Delivery_Data_Analysis">GitHub</a>
-</div>
-
-<div class="project">
-<h3>Cardiovascular Disease Analysis</h3>
-<p><b>Tools:</b> Python, Matplotlib</p>
-<p>Analyzed medical dataset to identify health risk patterns and visualize correlations between patient attributes and disease probability.</p>
-<a href="https://github.com/Sudhir-create-ui/Cardiovascular_Disease_Analysis">GitHub</a>
+<a href="https://github.com/Sudhir-create-ui/Adidas-Sales-Analysis">View Project</a>
 </div>
 
 <div class="project">
 <h3>Netflix Data Analytics Project</h3>
 <p><b>Tools:</b> SQL, Power BI</p>
-<p>End-to-end analytics project analyzing Netflix content trends, genres, and audience patterns using SQL queries and dashboards.</p>
-<a href="https://github.com/Sudhir-create-ui/Netflix-Data-Analytics-Project">GitHub</a>
-</div>
-
-<div class="project">
-<h3>Crime Dataset Analysis</h3>
-<p><b>Tools:</b> Python, Data Visualization</p>
-<p>Explored crime trends using statistical analysis and data visualization techniques.</p>
-<a href="https://github.com/Sudhir-create-ui/Crime_Dataset_India">GitHub</a>
+<a href="https://github.com/Sudhir-create-ui/Netflix-Data-Analytics-Project">View Project</a>
 </div>
 
 <div class="project">
 <h3>Gym Analytics Dashboard</h3>
 <p><b>Tools:</b> Excel, Power BI</p>
-<p>Built a business dashboard to track gym memberships, attendance and performance metrics.</p>
-<a href="https://github.com/Sudhir-create-ui/Gym-Analytics-Dashboard">GitHub</a>
+<a href="https://github.com/Sudhir-create-ui/Gym-Analytics-Dashboard">View Project</a>
 </div>
 
 </div>
-
-</section>
-
-
-<section>
-
-<h2>Professional Experience</h2>
-
-<p>
-
-<b>Freelance Data Analyst | Remote | 2025 – Present</b>
-
-<ul>
-<li>Analyzed datasets containing 10,000–20,000+ records for multiple clients.</li>
-<li>Built Power BI dashboards and Excel reports for KPI monitoring.</li>
-<li>Performed data cleaning and transformation using Python and SQL.</li>
-<li>Created visualizations and insights supporting business decisions.</li>
-<li>Collaborated with stakeholders to translate business questions into dashboards.</li>
-</ul>
-
-</p>
 
 </section>
 
@@ -315,8 +300,7 @@ make better strategic decisions.
 <div class="cert">Data Analytics Simulation – Deloitte</div>
 <div class="cert">Google Cloud Introduction to Generative AI</div>
 <div class="cert">Microsoft Excel Certification</div>
-<div class="cert">Google Gemini for Workspace</div>
-<div class="cert">Introduction to Data Analytics</div>
+<div class="cert">Gemini for Workspace</div>
 
 </div>
 
@@ -325,7 +309,7 @@ make better strategic decisions.
 
 <section>
 
-<h2>Contact Me</h2>
+<h2>Contact</h2>
 
 <p>Email: sudhisaroha70@gmail.com</p>
 
@@ -341,16 +325,22 @@ make better strategic decisions.
 
 </div>
 
+<div class="social">
+
+<a href="https://github.com/Sudhir-create-ui"><i class="fa-brands fa-github"></i></a>
+
+<a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
 </section>
 
 
 <footer>
 
-<p>© 2026 Sudhir | Data Analyst Portfolio</p>
+© 2026 Sudhir Saroha | Data Analyst Portfolio
 
 </footer>
 
-
 </body>
 </html>
-
