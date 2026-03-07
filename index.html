@@ -1,353 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sudhir Saroha | Data Analyst</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<title>Sudhir | Data Analyst Portfolio</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI;
-scroll-behavior:smooth;
-}
-
-body{
-background:linear-gradient(-45deg,#0f2027,#2c5364,#1f1c2c,#3a1c71);
-background-size:400% 400%;
-animation:gradientBG 12s ease infinite;
-color:white;
-overflow-x:hidden;
-}
-
-/* animated gradient */
-
-@keyframes gradientBG{
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
-
-/* floating DATA ANALYST words */
-
-.floating-text{
-position:fixed;
-font-size:28px;
-font-weight:bold;
-color:rgba(255,255,255,0.08);
-animation:float 20s linear infinite;
-}
-
-@keyframes float{
-0%{
-transform:translateY(100vh) translateX(0);
-}
-100%{
-transform:translateY(-120vh) translateX(200px);
-}
-}
-
-/* navbar */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
-}
-
-nav h2{
-color:#00e5ff;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-}
-
-nav a:hover{
-color:#00e5ff;
-}
-
-/* hero */
-
-.hero{
-text-align:center;
-padding:120px 20px;
-}
-
-.hero h1{
-font-size:55px;
-background:linear-gradient(90deg,#00e5ff,#ff4ecd);
--webkit-background-clip:text;
-color:transparent;
-}
-
-.hero p{
-margin-top:15px;
-font-size:20px;
-color:#cbd5f5;
-}
-
-/* stats */
-
-.stats{
-display:flex;
-justify-content:center;
-gap:70px;
-margin:60px 0;
-}
-
-.stat{
-text-align:center;
-}
-
-.stat h2{
-font-size:40px;
-color:#00e5ff;
-}
-
-/* container */
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-/* projects */
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:rgba(0,0,0,0.45);
-padding:25px;
-border-radius:15px;
-transition:0.4s;
-backdrop-filter:blur(10px);
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.05);
-box-shadow:0 0 25px #00e5ff;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-.card p{
-font-size:14px;
-color:#d1d5db;
-margin-bottom:10px;
-}
-
-.card a{
-color:#00e5ff;
-text-decoration:none;
-}
-
-/* skills */
-
-.skills{
-text-align:center;
-margin-top:80px;
-}
-
-.skill-icons{
-font-size:50px;
-margin-top:30px;
-display:flex;
-justify-content:center;
-gap:40px;
-color:#00e5ff;
-}
-
-/* contact */
-
-.contact{
-text-align:center;
-margin-top:80px;
-}
-
-.contact a{
-color:#00e5ff;
-text-decoration:none;
-font-size:18px;
-}
-
-/* footer */
-
-footer{
-text-align:center;
-padding:40px;
-margin-top:60px;
-color:#cbd5f5;
-}
-
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:#f1f5f9}
+header{padding:60px 20px;text-align:center;background:linear-gradient(135deg,#2563eb,#7c3aed)}
+header h1{font-size:42px;margin:0}
+header p{font-size:18px;margin-top:10px}
+section{padding:50px 10%;}
+.skills span{display:inline-block;background:#1e293b;margin:6px;padding:10px 16px;border-radius:8px}
+.project{background:#1e293b;padding:20px;border-radius:10px;margin-bottom:20px}
+.project h3{margin-top:0}
+.links a{margin-right:10px;color:#38bdf8;text-decoration:none;font-weight:bold}
+footer{text-align:center;padding:30px;background:#020617}
 </style>
-
 </head>
-
 <body>
 
-<!-- floating words -->
+<header>
+<h1>Hi, I'm Sudhir</h1>
+<p>Data Analyst skilled in SQL, Python, Power BI, and Excel.</p>
+<p>I turn raw data into insights that help businesses make better decisions.</p>
+</header>
 
-<div class="floating-text" style="left:10%">DATA ANALYST</div>
-<div class="floating-text" style="left:40%;animation-delay:5s">DATA ANALYST</div>
-<div class="floating-text" style="left:70%;animation-delay:10s">DATA ANALYST</div>
-
-<nav>
-
-<h2>Sudhir</h2>
-
-<div>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
+<section>
+<h2>Skills</h2>
+<div class="skills">
+<span>SQL</span>
+<span>Python (Pandas, NumPy)</span>
+<span>Power BI</span>
+<span>Excel</span>
+<span>Data Cleaning</span>
+<span>Data Visualization</span>
 </div>
-
-</nav>
-
-<section class="hero">
-
-<h1>Sudhir Saroha</h1>
-
-<p>Data Analyst | SQL | Python | Power BI | Data Visualization</p>
-
 </section>
 
-<section class="stats">
+<section>
+<h2>Projects</h2>
 
-<div class="stat">
-<h2>7+</h2>
-<p>Projects</p>
-</div>
-
-<div class="stat">
-<h2>5+</h2>
-<p>Datasets</p>
-</div>
-
-<div class="stat">
-<h2>4+</h2>
-<p>Tools</p>
-</div>
-
-</section>
-
-<section class="container" id="projects">
-
-<h2 style="text-align:center;margin-bottom:40px;">Projects</h2>
-
-<div class="projects">
-
-<div class="card">
+<div class="project">
 <h3>Adidas Sales Analysis</h3>
-<p>Retail sales analytics with Power BI dashboards.</p>
-<a href="https://github.com/Sudhir-create-ui/Adidas-Sales-Analysis">View Project</a>
+<p><strong>Tools:</strong> Power BI, Excel</p>
+<p><strong>Dataset:</strong> Kaggle Adidas Sales dataset</p>
+<p><strong>What I Did:</strong></p>
+<ul>
+<li>Cleaned and transformed raw sales data</li>
+<li>Built an interactive Power BI dashboard</li>
+<li>Analyzed sales performance across regions</li>
+</ul>
+<p><strong>Result:</strong> Identified the West region as the highest revenue generating region and discovered product trends driving sales.</p>
+<div class="links">
+<a href="#">Live Dashboard</a>
+<a href="https://github.com/codersudhir">GitHub Repository</a>
+</div>
 </div>
 
-<div class="card">
+<div class="project">
 <h3>Grocery Sales Analysis</h3>
-<p>Exploring grocery sales trends and revenue insights.</p>
-<a href="https://github.com/Sudhir-create-ui/Grocery-Sales-">View Project</a>
+<p><strong>Tools:</strong> Excel, Power BI</p>
+<p><strong>Dataset:</strong> Retail grocery dataset</p>
+<p><strong>What I Did:</strong></p>
+<ul>
+<li>Performed data cleaning and transformation</li>
+<li>Built visual dashboards to analyze product performance</li>
+<li>Examined customer purchasing behavior</li>
+</ul>
+<p><strong>Result:</strong> Found top performing product categories and peak sales periods to help improve inventory planning.</p>
+<div class="links">
+<a href="#">Live Dashboard</a>
+<a href="https://github.com/codersudhir">GitHub Repository</a>
 </div>
-
-<div class="card">
-<h3>Swiggy Delivery Analysis</h3>
-<p>Food delivery analytics and operational insights.</p>
-<a href="https://github.com/Sudhir-create-ui/Swiggy_Delivery_Data_Analysis">View Project</a>
-</div>
-
-<div class="card">
-<h3>Cardiovascular Disease Analysis</h3>
-<p>Health dataset analysis identifying disease risk factors.</p>
-<a href="https://github.com/Sudhir-create-ui/Cardiovascular_Disease_Analysis">View Project</a>
-</div>
-
-<div class="card">
-<h3>Netflix Data Analytics</h3>
-<p>End-to-end SQL + Power BI analytics project.</p>
-<a href="https://github.com/Sudhir-create-ui/Netflix-Data-Analytics-Project">View Project</a>
-</div>
-
-<div class="card">
-<h3>Crime Dataset India</h3>
-<p>Visualization of crime trends and patterns.</p>
-<a href="https://github.com/Sudhir-create-ui/Crime_Dataset_India">View Project</a>
-</div>
-
-<div class="card">
-<h3>Gym Analytics Dashboard</h3>
-<p>Dashboard tracking membership and revenue insights.</p>
-<a href="https://github.com/Sudhir-create-ui/Gym-Analytics-Dashboard">View Project</a>
-</div>
-
 </div>
 
 </section>
 
-<section class="skills" id="skills">
-
-<h2>Tech Stack</h2>
-
-<div class="skill-icons">
-
-<i class="fa-solid fa-database"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-chart-line"></i>
-<i class="fa-solid fa-table"></i>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
-
+<section>
 <h2>Contact</h2>
-
-<p>Email</p>
-
-<a href="mailto:sudhirsaroha70@gmail.com">
-sudhirsaroha70@gmail.com
-</a>
-
-<br><br>
-
-<a href="https://github.com/Sudhir-create-ui">
-<i class="fa-brands fa-github"></i> GitHub
-</a>
-
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://linkedin.com">
-<i class="fa-brands fa-linkedin"></i> LinkedIn
-</a>
-
+<p>LinkedIn: <a href="https://linkedin.com">Your LinkedIn</a></p>
+<p>GitHub: <a href="https://github.com/codersudhir">github.com/codersudhir</a></p>
+<p>Email: your.email@example.com</p>
 </section>
 
 <footer>
-
-<p>© 2026 Sudhir Saroha | Data Analyst Portfolio</p>
-
+<p>© 2026 Sudhir | Data Analyst Portfolio</p>
 </footer>
 
 </body>
-
 </html>
+
